@@ -1,3 +1,6 @@
+-- select the rental database first
+USE rental;
+
 -- schema for rentals table
 CREATE TABLE rentals (
   id INT AUTO_INCREMENT PRIMARY KEY,
