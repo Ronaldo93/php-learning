@@ -1,0 +1,12 @@
+property_name,owner,address,phone,image_data,image_url
+"Sunset Villa","Lan Nguyen","123 Nguyen Trai, District 1, Ho Chi Minh City","+84-90-123-4567",\N,""
+"Riverside Loft","Minh Tran","45 Bach Dang, Hai Chau, Da Nang","+84-93-555-0101",\N,""
+"Garden House","Thao Le","78 Phan Chu Trinh, Hoan Kiem, Ha Noi","+84-91-222-3344",\N,\N
+"City Center Studio","Bao Pham","12 Ly Tu Trong, District 1, Ho Chi Minh City","+84-97-888-9999",\N,""
+"Coastal Retreat","Hung Do","9 Tran Phu, Vung Tau","+84-92-777-1212",\N,""
+"Old Quarter Flat","Mai Hoang","36 Hang Dao, Hoan Kiem, Ha Noi","+84-98-456-7890",\N,""
+"Mountain View Cabin","Quang Vu","Km5 Ta Phin, Sa Pa, Lao Cai","+84-94-606-7070",\N,""
+"Lakeside Bungalow","Anh Phan","2 Xuan Huong Lake, Da Lat","+84-96-313-1415",\N,""
+"Tech Park Apartment","Dung Nguyen","101 Hoa Binh, Thu Duc City, HCMC","+84-90-000-2020",\N,""
+"Heritage Townhouse","Thu Truong","5 Le Loi, Hue","+84-93-303-4040",\N,""
+

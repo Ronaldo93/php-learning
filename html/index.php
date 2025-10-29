@@ -2,8 +2,8 @@
 // Simple PHP Landing Page
 
 // You can change this to your site's name
-$site_title = "My PHP Site";
-$tagline = "The best PHP site";
+$site_title = "Rental management";
+$tagline = "The best place to rent your next home";
 ?>
 
 <!DOCTYPE html>
@@ -19,9 +19,10 @@ $tagline = "The best PHP site";
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-base-200 flex items-center justify-center min-h-screen">
+  <!-- Title -->
   <div class="card w-96 bg-base-100 shadow-xl">
     <div class="card-body">
-      <h2 class="card-title text-center">Tailwind + DaisyUI</h2>
+      <h2 class="card-title text-center"><?php echo $site_title; ?></h2>
       <p class="text-sm text-base-content/70">
         This page uses TailwindCSS and DaisyUI directly from a CDN.
       </p>
