@@ -99,6 +99,89 @@ $result = $mysqli->query($query);
 
       $mysqli->close();
       ?>
+
+      <!-- create new rental -->
+      <!-- Open the modal using ID.showModal() method -->
+      <button class="btn btn-primary btn-lg" onclick="my_modal_1.showModal()">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        </svg>
+        Add New Property
+      </button>
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box max-w-2xl">
+          <h3 class="text-2xl font-bold mb-6">Add New Rental Property</h3>
+
+          <form method="POST" action="add_rental.php" class="space-y-4">
+            <!-- ID Field -->
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Property ID</span>
+              </label>
+              <input type="text" name="id" placeholder="Enter property ID" class="input input-bordered w-full" required />
+            </div>
+
+            <!-- Property Name Field -->
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Property Name</span>
+              </label>
+              <input type="text" name="property_name" placeholder="e.g., Cozy Downtown Apartment" class="input input-bordered w-full" required />
+            </div>
+
+            <!-- Owner Field -->
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Owner Name</span>
+              </label>
+              <input type="text" name="owner" placeholder="Enter owner's name" class="input input-bordered w-full" required />
+            </div>
+
+            <!-- Address Field -->
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Address</span>
+              </label>
+              <textarea name="address" placeholder="Enter full address" class="textarea textarea-bordered w-full h-20" required></textarea>
+            </div>
+
+            <!-- Phone Field -->
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Phone Number</span>
+              </label>
+              <input type="tel" name="phone" placeholder="e.g., (555) 123-4567" class="input input-bordered w-full" required />
+            </div>
+
+            <!-- Image URL Field -->
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text font-semibold">Image URL</span>
+              </label>
+              <input type="text" name="image_url" placeholder="https://example.com/image.jpg" class="input input-bordered w-full" />
+              <label class="label">
+                <span class="label-text-alt text-base-content/60">Optional: Provide a URL to an image of the property</span>
+              </label>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="modal-action">
+              <button type="submit" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                Submit Property
+              </button>
+              <button type="button" class="btn btn-ghost" onclick="my_modal_1.close()">Cancel</button>
+            </div>
+          </form>
+        </div>
+        <!-- Close modal when clicking outside -->
+        <form method="dialog" class="modal-backdrop">
+          <button>close</button>
+        </form>
+      </dialog>
+
     </div>
   </div>
 </body>
