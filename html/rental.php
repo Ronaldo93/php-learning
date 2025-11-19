@@ -112,7 +112,7 @@ $result = $mysqli->query($query);
         <div class="modal-box max-w-2xl">
           <h3 class="text-2xl font-bold mb-6">Add New Rental Property</h3>
 
-          <form method="POST" action="add_rental.php" class="space-y-4">
+          <form method="POST" action="add_rental.php" enctype="multipart/form-data" class="space-y-4">
             <!-- ID Field -->
             <div class="form-control">
               <label class="label">
@@ -153,14 +153,14 @@ $result = $mysqli->query($query);
               <input type="tel" name="phone" placeholder="e.g., (555) 123-4567" class="input input-bordered w-full" required />
             </div>
 
-            <!-- Image URL Field -->
+            <!-- Image Upload Field -->
             <div class="form-control">
               <label class="label">
-                <span class="label-text font-semibold">Image URL</span>
+                <span class="label-text font-semibold">Property Image</span>
               </label>
-              <input type="text" name="image_url" placeholder="https://example.com/image.jpg" class="input input-bordered w-full" />
+              <input type="file" name="property_image" accept="image/*" class="file-input file-input-bordered w-full" />
               <label class="label">
-                <span class="label-text-alt text-base-content/60">Optional: Provide a URL to an image of the property</span>
+                <span class="label-text-alt text-base-content/60">Optional: Upload an image of the property (JPG, PNG, GIF)</span>
               </label>
             </div>
 
